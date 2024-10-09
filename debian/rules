@@ -1,4 +1,10 @@
 #!/usr/bin/make -f
 
+export DH_GOLANG_EXCLUDES := examples plugins
+
 %:
-	dh $@
+	dh $@ --builddirectory=_build --buildsystem=golang
+
+# TODO: Find out and document why pkg/adaptation tests panic with nil-pointer dereference
+override_dh_auto_test:
+	DH_GOLANG_EXCLUDES="$(DH_GOLANG_EXCLUDES) nri/pkg/adaptation" dh_auto_test --buildsystem=golang

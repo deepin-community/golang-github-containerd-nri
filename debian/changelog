@@ -1,5 +1,11 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-containerd-nri (0.6.1-2) unstable; urgency=medium
 
-  * Initial release
+  * Upload to unstable
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 30 Jun 2024 11:26:56 -0400
+
+golang-github-containerd-nri (0.6.1-1) experimental; urgency=medium
+
+  * Initial release (Closes: #1073292)
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 16 Jun 2024 12:00:06 -0400
